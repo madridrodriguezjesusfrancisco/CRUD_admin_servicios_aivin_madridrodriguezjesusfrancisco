@@ -9,7 +9,10 @@
   <h1>Hola desde MySQL</h1>
   <!-- {{ motor }}: Django reemplaza esto por el valor de contexto['motor'] que armó la vista -->
   <p>Motor de base de datos: {{ motor }}</p>
-  <!-- {{ host }}: reemplazado por contexto['host'] — si dice "aivencloud.com" es MySQL real -->
+ <!-- párrafo del host, no se toca -->
   <p>Host: {{ host }}</p>
+  <!-- a NUEVO: {% url 'servicios' %} busca la ruta por su name= en urls.py -->
+  <a href="{% url 'servicios' %}">Ver servicios →</a>
+<!-- cierra el body -->
 </body>
 </html>

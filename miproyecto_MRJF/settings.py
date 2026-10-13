@@ -167,3 +167,4 @@ STORAGES = {
     },
 # cierre del diccionario STORAGES
 }
+LOGIN_URL = '/admin/login/'
